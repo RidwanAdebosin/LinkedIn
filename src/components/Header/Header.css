@@ -9,8 +9,55 @@ input[type=text] {
     border: none;
 }
 
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-inline: 12rem;
+}
+
+
 .leftNav{
     display: flex;
     align-items: center;
     gap: 7px;
+}
+
+.navlink{
+    text-decoration: none;
+    color: #666666;
+}
+
+.navlink:hover{
+    border-bottom: 3px solid black;
+    
+}
+
+.middleNav {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.middleNav > * {
+    text-align: center;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gridBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightNav .premiumlink {
+    width: 110px;
+    text-align: center;
+    color: #C8AE90;
 }
