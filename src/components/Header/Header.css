@@ -1,0 +1,16 @@
+input[type=text] {
+    border-radius: 4px;
+    font-size: 14px;
+    background-image: url('../../assets/search.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    background-color: #EDF3F8;
+    border: none;
+}
+
+.leftNav{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
