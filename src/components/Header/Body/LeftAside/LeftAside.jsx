@@ -1,5 +1,5 @@
 
-import UserIcon from "../../../../assets/ProfileImg/ProfileImg";
+import UserIcon from "../../../../assets/UserIcon/UserIcon";
 import "./LeftAside.css";
 
 import { FaBookmark } from "react-icons/fa";
@@ -13,7 +13,6 @@ const LeftAside = () => {
           <div className="topBarProfileImg">
           <UserIcon/>
           </div>
-          {/* <img src={ProfileUrl} className="profileImg" /> */}
           <div className="userDetails">
             <h1>Ridwan Adebosin</h1>
             <span>Software Developer</span>

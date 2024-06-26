@@ -13,11 +13,12 @@ align-items: center;
 }
 
 .postField {
-    height: 150px;
+    height: auto;
     border-radius: 10px;
     width: 100%;
     background-color: white;
     margin-block-end: 1rem;
+    padding: 5px 10px;
 }
 
 .post {
@@ -33,5 +34,26 @@ align-items: center;
     margin-block-start: 1rem;
 }
 
+.inputField{
+    display: flex;
+    align-items: center;
+}
 
+.inputField input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgba(116, 117, 117, 0.733);
+    border-radius: 25px;
+    background-color: transparent;
+    padding-inline-start: 1rem;
+    font-weight: bold;
+}
+
+.inputFieldIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
 
