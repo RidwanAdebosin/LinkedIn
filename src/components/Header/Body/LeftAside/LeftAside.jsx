@@ -3,7 +3,8 @@ import "./LeftAside.css";
 const LeftAside = () => {
     return(
         <aside className="leftAside">
-            <h1>Left</h1>
+           <div className="profileContainer"></div>
+           <div className="recentActivitiesContainer"></div>
         </aside>
     )
 }

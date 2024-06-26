@@ -15,6 +15,11 @@ input[type=text] {
     align-items: center;
     height: 60px;
     padding-inline: 12rem;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 1px solid rgb(202, 198, 198);
+    margin-block-end: 20px;
+    background-color: white;
 }
 
 

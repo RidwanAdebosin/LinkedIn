@@ -1,4 +1,15 @@
 
-.leftAside{
-    border: 3px solid red;
+.profileContainer {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    margin-block-end: 1.5rem;
+}
+
+.recentActivitiesContainer {
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
 }

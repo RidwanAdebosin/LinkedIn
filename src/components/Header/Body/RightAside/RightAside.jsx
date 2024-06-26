@@ -3,7 +3,10 @@ import "./RightAside.css";
 const RightAside = () => {
     return(
         <aside className="rightAside">
-            <h1>Right</h1>
+           <div className="feedContainer"></div>
+           <div className="footerContainer"></div>
+       
+    )
         </aside>
     )
 }

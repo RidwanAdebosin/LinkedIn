@@ -1,4 +1,21 @@
-
 .rightAside{
-    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feedContainer {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.footerContainer {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(189, 47, 47);
+    position: sticky;
+    top: 90px;
 }
