@@ -1,12 +1,23 @@
 
+.lineThrough {
+display: flex;
+justify-content: space-between;
+align-items: center;
 
+}
+
+
+hr {
+    width: 80%;
+    color: #c5c4c1;
+}
 
 .postField {
     height: 150px;
     border-radius: 10px;
     width: 100%;
     background-color: white;
-    margin-block-end: 1.5rem;
+    margin-block-end: 1rem;
 }
 
 .post {
@@ -19,7 +30,7 @@
 .posts {
     display: grid;
     gap: 1.5rem;
-    margin-block-start: 1.5rem;
+    margin-block-start: 1rem;
 }
 
 

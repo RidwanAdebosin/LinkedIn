@@ -11,10 +11,10 @@ const MiddleContainer = () => {
     return(
         <aside className="middleContainer">
             <div className="postField"></div>
-            {/* <div className="lineThrough"> */}
+            <div className="lineThrough">
             <hr/>
-            {/* <span>Sort by: <em>Top</em></span> */}
-            {/* </div> */}
+            <span>Sort by: <em>Top</em></span>
+            </div>
             <div className="posts">
             <Post/>
             <Post/>
