@@ -1,6 +1,6 @@
 
 .profileContainer {
-    height: 400px;
+    height: auto;
     width: 100%;
     border-radius: 10px;
     background-color: white;
@@ -12,4 +12,79 @@
     width: 100%;
     border-radius: 10px;
     background-color: white;
+}
+
+.topBar{
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: gray;
+    
+}
+
+.topBarProfileImg{
+    position: relative;
+    top: -20px;
+    transform: translateX(50%);
+}
+
+
+
+.userDetails h1{
+    font-size: 20px;
+}
+
+.userDetails {
+    text-align: center;
+    margin-block-end: 15px;
+}
+
+.postAnalytics {
+    padding: 10px 5px;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.postAnalytic{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.postAnalytic span {
+    color: blue;
+}
+
+.goPremium {
+    padding: 10px 5px;
+    line-height: 1.5;
+}
+
+.goPremium p:first-child {
+    font-size: 14px;
+}
+
+.goPremium .yellowBox {
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(60deg, rgb(116, 84, 3), rgb(255, 230, 0));
+    border-radius: 5px;
+}
+
+.yellowBoxWrapper{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+& p {
+    font-weight: bold;
+    font-size: 14px;
+}
+}
+
+.savedItems {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 5px;
 }

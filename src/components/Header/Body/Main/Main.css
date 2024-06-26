@@ -7,7 +7,7 @@ align-items: center;
 }
 
 
-hr {
+.lineThrough hr {
     width: 80%;
     color: #c5c4c1;
 }
