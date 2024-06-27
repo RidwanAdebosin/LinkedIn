@@ -18,8 +18,10 @@
     height: 50px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: gray;
-    
+    background: url(https://media.licdn.com/dms/image/D4D16AQFS1ZM-lZsWbQ/profile-displaybackgroundimage-shrink_350_1400/0/1698694259191?e=1724889600&v=beta&t=JsqDsB8ZwAdPFcvBIYR68KYv6jrh9wS6zRFqRG1o_iI);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 

@@ -46,7 +46,8 @@ const MiddleContainer = () => {
         Together, they form a robust support system essential for personal and
         professional success.
       </p>
-      <p>Best regards,</p>
+      <p>Best regards, <br/>Ridwan Adebosin.</p>
+      
     </>
   );
 
