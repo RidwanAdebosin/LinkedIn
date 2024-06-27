@@ -26,7 +26,32 @@ align-items: center;
     border-radius: 10px;
     width: 100%;
     background-color: white;
+    padding: 10px;
+
+    & li {
+        list-style: none;
+        line-height: 2.0;
+    }
 }
+
+.userPostDetails{
+    display: flex;
+}
+
+.post .userDetails{
+    display: block;
+    text-align: start;
+}
+
+.userPost {
+    line-height: 1.5;
+
+    & p:first-child{
+        margin-block-end: 1rem;
+    }
+}
+
+
 
 .posts {
     display: grid;

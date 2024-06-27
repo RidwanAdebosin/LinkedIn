@@ -15,7 +15,7 @@ const LeftAside = () => {
           </div>
           <div className="userDetails">
             <h1>Ridwan Adebosin</h1>
-            <span>Software Developer</span>
+            <span>Front-End Developer | Technical Writer | Tech Assistant Trainer</span>
           </div>
         </div>
         <hr />
