@@ -1,68 +1,84 @@
-import UserIcon from "../../../../assets/UserIcon/UserIcon";
-import "./Main.css";
 
-const Post = () => {
+import UserIcon from '../../../../assets/UserIcon/UserIcon';
+import './Main.css';
 
-    const truncate= (str, length) => {
-        return str.length > length ? str.substring(0, length) + '...' : str;
-    };
+const Post = ({ userName, userTitle, postContent, postContentImage }) => {
+  const truncate = (str, length) => {
+    return str.length > length ? str.substring(0, length) + "..." : str;
+  };
 
-    const userTitle = "Front-End Developer | Technical Writer | Tech Assistant Trainer";
-  return <div className="post">
-    <div className="userPostDetails">
-    <UserIcon/>
-    <div className="userDetails">
-            <h1>Ridwan Adebosin</h1>
-            <span> { truncate(userTitle, 40)}</span>
+  return (
+    <div className="post">
+      <div className="userPostDetails">
+        <UserIcon />
+        <div className="userDetails">
+          <h1>{userName}</h1>
+          <span>{truncate(userTitle, 40)}</span>
+        </div>
+      </div>
+
+      <div className="userPost">
+        {postContent}
+        {postContentImage && postContentImage()}
+      </div>
     </div>
-
-    </div>
-
-
-    <div className="userPost">
-    <p>
-    Dear dreamer,
-</p>
-<p>
-    Navigating life is not a solitary journey. Having an accountability partner is crucial. They motivate you, regularly check your progress, provide support, and encourage you, helping you maintain momentum. On top of that, a mentor adds immense value. Here are a few highlighted benefits:
-</p>
-<ul>
-    <li>🎯 Networking opportunities: Introductions and connections that expand your professional circle.</li>
-    <li>🎯 Accountability: Someone who holds you to your commitments and goals.</li>
-    <li>🎯 Career progression: Guidance on advancing in your career path.</li>
-    <li>🎯 Personal development: Insights and advice to foster your growth.</li>
-</ul>
-<p>
-    Together, they form a robust support system essential for personal and professional success.
-</p>
-<p>
-    Best regards,
-</p>
-
-    </div>
-  </div>;
+  );
 };
 
 const MiddleContainer = () => {
+  const samplePostContent = (
+    <>
+      <p>Dear dreamer,</p>
+      <p>
+        Navigating life is not a solitary journey. Having an accountability
+        partner is crucial. They motivate you, regularly check your progress,
+        provide support, and encourage you, helping you maintain momentum. On
+        top of that, a mentor adds immense value. Here are a few highlighted
+        benefits:
+      </p>
+      <ul>
+        <li>🎯 Networking opportunities: Introductions and connections that expand your professional circle.</li>
+        <li>🎯 Accountability: Someone who holds you to your commitments and goals.</li>
+        <li>🎯 Career progression: Guidance on advancing in your career path.</li>
+        <li>🎯 Personal development: Insights and advice to foster your growth.</li>
+      </ul>
+      <p>
+        Together, they form a robust support system essential for personal and
+        professional success.
+      </p>
+      <p>Best regards,</p>
+    </>
+  );
+
+  const postContentImage = () => {
+    return (
+        <img src="https://media.licdn.com/dms/image/D4D22AQEBwf3Wo4NnaA/feedshare-shrink_800/0/1719072638253?e=1722470400&v=beta&t=0W3v_PD1MkRzOIKVR02uDQoerWt9KJim3Q9VV86LBW0"
+        alt='Post content'
+        />
+    )
+  }
+
   return (
     <aside className="middleContainer">
       <div className="postField">
         <div className="inputField">
-            <UserIcon/>
-            <input type="name" placeholder="Start a post, try writing with AI" className="input"/>
+          <UserIcon />
+          <input
+            type="name"
+            placeholder="Start a post, try writing with AI"
+            className="input"
+          />
         </div>
         <div className="inputFieldIcon">
-            <div className="mediaSection">
-                
-                <p>Media</p>
-            </div>
-            <div className="eventSection">
-                
-                <p>Event</p>
-            </div>
-            <div className="writeSection">
-                <p>Write article</p>
-            </div>
+          <div className="mediaSection">
+            <p>Media</p>
+          </div>
+          <div className="eventSection">
+            <p>Event</p>
+          </div>
+          <div className="writeSection">
+            <p>Write article</p>
+          </div>
         </div>
       </div>
       <div className="lineThrough">
@@ -72,9 +88,22 @@ const MiddleContainer = () => {
         </span>
       </div>
       <div className="posts">
-        <Post />
-        <Post />
-        <Post />
+        <Post
+          userName="Ridwan Adebosin"
+          userTitle="Front-End Developer | Technical Writer | Tech Assistant Trainer"
+          postContent={samplePostContent}
+          postContentImage ={postContentImage}
+        />
+        <Post
+          userName="Ridwan Adebosin"
+          userTitle="Front-End Developer | Technical Writer | Tech Assistant Trainer"
+          postContent={samplePostContent}
+        />
+        <Post
+          userName="Ridwan Adebosin"
+          userTitle="Front-End Developer | Technical Writer | Tech Assistant Trainer"
+          postContent={samplePostContent}
+        />
       </div>
     </aside>
   );
