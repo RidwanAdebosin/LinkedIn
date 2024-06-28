@@ -4,18 +4,45 @@
     gap: 1rem;
 }
 
+.suggestedUserContainer{
+    display: flex;
+}
+
+
+
+.suggestedUserImage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.userPostDetails{
+    display: flex;
+    padding: 10px 10px ;
+}
+
+.post .userDetails{
+    display: block;
+    text-align: start;
+   
+}
+
 .feedContainer {
-    height: 400px;
+    height: auto;
+    padding: 10px;
     width: 100%;
     border-radius: 10px;
     background-color: white;
+    border: 1px solid #B2B2B2;
+
 }
 
 .footerContainer {
     height: 300px;
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(189, 47, 47);
     position: sticky;
     top: 90px;
+    border: 1px solid #B2B2B2;
 }

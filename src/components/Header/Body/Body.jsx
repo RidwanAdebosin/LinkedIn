@@ -5,7 +5,7 @@ import "./Body.css";
 
 const Body = () => {
     return (
-        <main>
+        <main className="main">
         <LeftAside/>
         <Main/>
         <RightAside/>

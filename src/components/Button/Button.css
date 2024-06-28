@@ -1,6 +1,8 @@
 button {
-    width: 30px;
+    margin-block-start: 0.5rem;
+    width: fit-content;
     padding: 10px;
     border: 2px solid blue;
     border-radius: 20px;
+    background-color: transparent;
 }

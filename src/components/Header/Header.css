@@ -1,69 +1,70 @@
 input[type=text] {
     border-radius: 4px;
     font-size: 14px;
-    background-image: url('../../assets/search.svg');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     background-color: #EDF3F8;
     border: none;
-}
-
-.navBar {
+    width: 300px;
+  }
+  
+  .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     width: 100%;
-    padding-inline: 12rem;
+    padding: 0 2rem;
     position: fixed;
     z-index: 99;
     border-bottom: 1px solid rgb(202, 198, 198);
-    margin-block-end: 20px;
     background-color: white;
-}
-
-
-.leftNav{
+  }
+  
+  .leftNav {
     display: flex;
     align-items: center;
-    gap: 7px;
-}
-
-.navlink{
-    text-decoration: none;
-    color: #666666;
-}
-
-.navlink:hover{
-    border-bottom: 3px solid black;
-    
-}
-
-.middleNav {
+    gap: 10px;
+  }
+  
+  .middleNav {
     display: flex;
-    gap: 15px;
-    font-size: 18px;
-}
-
-.middleNav > * {
-    text-align: center;
-}
-
-.rightNav {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.gridBox{
+    gap: 30px;
+    font-size: 14px;
+  }
+  
+  .navlink {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.rightNav .premiumlink {
-    width: 110px;
-    text-align: center;
+    text-decoration: none;
+    color: #666666;
+    border-bottom: 2px solid transparent; 
+    transition: color 0.3s, border-bottom-color 0.3s; 
+  }
+  
+  .navlink:hover {
+    border-bottom-color: black; 
+    color: black;
+  }
+  
+  .rightNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .gridBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .premiumlink {
     color: #C8AE90;
-}
+  }
+  
+  .premiumlink a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
