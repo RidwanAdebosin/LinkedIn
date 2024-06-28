@@ -19,9 +19,11 @@ align-items: center;
     background-color: white;
     margin-block-end: 1rem;
     padding: 5px 10px;
+    border: 1px solid #B2B2B2;
 }
 
 .post {
+    border: 1px solid #B2B2B2;
     height: auto;
     border-radius: 10px;
     width: 100%;
@@ -70,15 +72,22 @@ align-items: center;
     align-items: center;
 }
 
-.inputField input {
-    padding: 15px;
+.inputField form {
     width: 100%;
-    border: 1px solid rgba(116, 117, 117, 0.733);
-    border-radius: 25px;
     background-color: transparent;
     padding-inline-start: 1rem;
     font-weight: bold;
+    border-radius: 25px;
+    
+    & input {
+        border: 1px solid rgba(116, 117, 117, 0.733);
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+    }
 }
+
+
 
 .inputFieldIcon{
     display: flex;
