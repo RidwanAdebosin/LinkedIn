@@ -92,29 +92,15 @@ const MiddleContainer = () => {
     );
   };
 
-  // Adding sample posts to the initial state
+
   useEffect(() => {
     setPosts([
       {
-        userName: "Ridwan Adebosin",
+        userName: "Ridwan debosin",
         userTitle:
           "Front-End Developer | Technical Writer | Tech Assistant Trainer",
         postContent: samplePostContent,
         postContentImage: postContentImage,
-      },
-      {
-        userName: "Ridwan Adebosin",
-        userTitle:
-          "Front-End Developer | Technical Writer | Tech Assistant Trainer",
-        postContent: samplePostContent,
-        postContentImage: null,
-      },
-      {
-        userName: "Ridwan Adebosin",
-        userTitle:
-          "Front-End Developer | Technical Writer | Tech Assistant Trainer",
-        postContent: samplePostContent,
-        postContentImage: null,
       },
     ]);
   }, []);
@@ -160,7 +146,7 @@ const MiddleContainer = () => {
             userName={post.userName}
             userTitle={post.userTitle}
             postContent={post.postContent}
-            postContentImage={post.postContentImage}
+            postContentImage={post?.postContentImage}
           />
         ))}
       </div>
